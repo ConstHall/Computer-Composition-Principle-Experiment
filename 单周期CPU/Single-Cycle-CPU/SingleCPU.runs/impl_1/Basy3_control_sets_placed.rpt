@@ -1,0 +1,346 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Dec  9 08:24:38 2020
+| Host         : LAPTOP-K6ETJT1R running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Basy3_control_sets_placed.rpt
+| Design       : Basy3
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   268 |
+|    Minimum number of control sets                        |   268 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    35 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   268 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |   256 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              19 |           11 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             105 |           28 |
+| Yes          | No                    | No                     |            2048 |         1267 |
+| Yes          | No                    | Yes                    |              20 |            8 |
+| Yes          | Yes                   | No                     |               5 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+---------------------------------------------+-----------------------------------------+------------------+----------------+
+|            Clock Signal            |                Enable Signal                |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++------------------------------------+---------------------------------------------+-----------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG                     |                                             |                                         |                2 |              2 |
+|  slowclk/E[0]                      |                                             |                                         |                2 |              4 |
+|  CLK_IBUF_BUFG                     | slowclk/FSM_onehot_AN[4]_i_1_n_0            | remove_shake_reset/key_out_reg_reg_0    |                2 |              5 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/PCSrc_reg[0]_0[0]           | remove_shake_reset/key_out_reg_reg_0    |                2 |              7 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_107[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_108[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_101[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_102[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_106[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_1[0]                |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_115[0]              |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_109[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_116[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_111[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_104[0]              |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_112[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_118[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_119[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_103[0]              |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_120[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_114[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_121[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_105[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_11[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_12[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_113[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_10[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_110[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_122[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_117[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_0[0]                |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_134[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_176[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_131[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_129[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_170[0]              |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_142[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_127[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_157[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_13[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_140[0]              |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_17[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_179[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_18[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_180[0]              |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_141[0]              |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_154[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_150[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_136[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_155[0]              |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_147[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_125[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_149[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_158[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_15[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_160[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_146[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_161[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_124[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_128[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_139[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_145[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_148[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_16[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_163[0]              |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_164[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_132[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_138[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_166[0]              |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_130[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_14[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_151[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_167[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_165[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_169[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_137[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_171[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_172[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_173[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_126[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_135[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_143[0]              |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_123[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_144[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_162[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_168[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_152[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_174[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_175[0]              |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_177[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_156[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_153[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_178[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_159[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_51[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_53[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_50[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_20[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_29[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_30[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_190[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_191[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_31[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_37[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_62[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_63[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_65[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_182[0]              |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_38[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_26[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_5[0]                |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_32[0]               |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_6[0]                |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_23[0]               |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_43[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_184[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_189[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_45[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_28[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_42[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_47[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_56[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_60[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_35[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_183[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_25[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_39[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_44[0]               |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_64[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_34[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_2[0]                |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_3[0]                |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_46[0]               |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_36[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_52[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_40[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_24[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_186[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_22[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_181[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_27[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_33[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_4[0]                |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_41[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_185[0]              |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_21[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_19[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_55[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_57[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_187[0]              |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_58[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_59[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_188[0]              |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_54[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_61[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_49[0]               |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_66[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_48[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_97[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_89[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_94[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_86[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_96[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_92[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_69[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_9[0]                |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_70[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_72[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_78[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_84[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_85[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_87[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_81[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_98[0]               |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_68[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_90[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_75[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_93[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_77[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_74[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_79[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_91[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_95[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_7[0]                |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_76[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_82[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_67[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_73[0]               |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_71[0]               |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_88[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_8[0]                |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_99[0]               |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_83[0]               |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_80[0]               |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[128][7]_i_5_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[136][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[140][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[144][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[104][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[108][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_133[0]              |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[100][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[116][7]_i_3_0[0] |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[120][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[124][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[12][7]_i_3_0[0]  |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[132][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[168][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[188][7]_i_3_0[0] |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[24][7]_i_3_0[0]  |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[172][7]_i_3_0[0] |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[228][7]_i_3_0[0] |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[148][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[232][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[156][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[180][7]_i_3_0[0] |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[208][7]_i_3_0[0] |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[152][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[236][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[204][7]_i_3_0[0] |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[160][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[164][7]_i_3_0[0] |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[196][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[224][7]_i_4_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[220][7]_i_3_0[0] |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[16][7]_i_3_0[0]  |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[176][7]_i_3_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[200][7]_i_3_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[212][7]_i_3_0[0] |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[192][7]_i_4_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[184][7]_i_3_0[0] |                                         |                3 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[244][7]_i_3_0[0] |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[248][7]_i_3_0[0] |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[112][7]_i_3_0[0] |                                         |                2 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[216][7]_i_3_0[0] |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[240][7]_i_4_0[0] |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[84][7]_i_3_0[0]  |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[4][7]_i_3_0[0]   |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[255][7]_i_4_0[0] |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[44][7]_i_3_0[0]  |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[32][7]_i_3_0[0]  |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[52][7]_i_3_0[0]  |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[92][7]_i_3_0[0]  |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[68][7]_i_3_0[0]  |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[36][7]_i_3_0[0]  |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[8][7]_i_3_0[0]   |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[64][7]_i_3_0[0]  |                                         |                4 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[80][7]_i_3_0[0]  |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[28][7]_i_3_0[0]  |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[252][7]_i_4_0[0] |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[60][7]_i_3_0[0]  |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[76][7]_i_3_0[0]  |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[88][7]_i_3_0[0]  |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[72][7]_i_3_0[0]  |                                         |                5 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[48][7]_i_3_0[0]  |                                         |                7 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[56][7]_i_3_0[0]  |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[96][7]_i_3_0[0]  |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[40][7]_i_3_0[0]  |                                         |                8 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/mWR_reg_100[0]              |                                         |                6 |              8 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/dataMemory[20][7]_i_3_0[0]  |                                         |                6 |              8 |
+| ~remove_shake_clk/key_out_reg_BUFG | cpu/ControlUnit/curPC_reg_rep[6][0]         | remove_shake_reset/key_out_reg_reg_0    |                6 |             13 |
+|  cpu/PC/E[0]                       |                                             |                                         |                7 |             13 |
+|  CLK_IBUF_BUFG                     |                                             | remove_shake_reset/key_out_reg_reg_0    |                4 |             17 |
+|  CLK_IBUF_BUFG                     |                                             | remove_shake_clk/clear                  |                6 |             22 |
+|  CLK_IBUF_BUFG                     |                                             | remove_shake_reset/count_low[0]_i_1_n_0 |                6 |             22 |
+|  CLK_IBUF_BUFG                     |                                             | Button_IBUF                             |                6 |             22 |
+|  CLK_IBUF_BUFG                     |                                             | Reset_IBUF                              |                6 |             22 |
+|  remove_shake_clk/key_out_reg_BUFG | cpu/PC/p_0_in                               |                                         |               12 |             96 |
++------------------------------------+---------------------------------------------+-----------------------------------------+------------------+----------------+
+
+

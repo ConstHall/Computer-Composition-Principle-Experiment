@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec 30 08:49:23 2020
+# Process ID: 11840
+# Current directory: C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.runs/synth_1
+# Command line: vivado.exe -log TOP_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_CPU.tcl
+# Log file: C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.runs/synth_1/TOP_CPU.vds
+# Journal file: C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_CPU.tcl -notrace
+Command: synth_design -top TOP_CPU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9136 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 949.789 ; gain = 235.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_CPU' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'InsMem' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/InsMem.v:3]
+INFO: [Synth 8-3876] $readmem data file 'C:\Users\93508\Desktop\instruction.txt' is read successfully [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/InsMem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'InsMem' (2#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/InsMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SameRegister' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/SameRegister.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SameRegister' (3#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/SameRegister.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/Adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (4#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/Adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Mux3' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/Mux3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Mux3' (5#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/Mux3.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (32) of module 'Mux3' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/CPU.v:20]
+INFO: [Synth 8-6157] synthesizing module 'Mux2' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/Mux2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2' (6#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/Mux2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (7#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sign_zero_extend' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/sign_zero_extend.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sign_zero_extend' (8#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/sign_zero_extend.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/ALU.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/DataMem.v:3]
+WARNING: [Synth 8-4767] Trying to implement RAM 'dataMemory_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "dataMemory_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (10#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/DataMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LeftShift2' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/LeftShift2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'LeftShift2' (11#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/LeftShift2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Mux4' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/Mux4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4' (12#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/Mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/ControlUnit.v:1]
+	Parameter R_type bound to: 6'b000000 
+	Parameter addiu bound to: 6'b001001 
+	Parameter andi bound to: 6'b001100 
+	Parameter ori bound to: 6'b001101 
+	Parameter xori bound to: 6'b001110 
+	Parameter slti bound to: 6'b001010 
+	Parameter sw bound to: 6'b101011 
+	Parameter lw bound to: 6'b100011 
+	Parameter beq bound to: 6'b000100 
+	Parameter bne bound to: 6'b000101 
+	Parameter bltz bound to: 6'b000001 
+	Parameter j bound to: 6'b000010 
+	Parameter jal bound to: 6'b000011 
+	Parameter halt bound to: 6'b111111 
+	Parameter add bound to: 6'b100000 
+	Parameter sub bound to: 6'b100010 
+	Parameter And bound to: 6'b100100 
+	Parameter Or bound to: 6'b100101 
+	Parameter sll bound to: 6'b000000 
+	Parameter slt bound to: 6'b101010 
+	Parameter jr bound to: 6'b001000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/ControlUnit.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/ControlUnit.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (13#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/ControlUnit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (14#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/CPU.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'WriteReg' does not match port width (5) of module 'CPU' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:15]
+INFO: [Synth 8-6157] synthesizing module 'remove_shake' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/remove_shake.v:3]
+	Parameter SAMPLE_TIME bound to: 20000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'remove_shake' (15#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/remove_shake.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_slow' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/clk_slow.v:3]
+	Parameter DIVISION bound to: 100000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/clk_slow.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'clk_slow' (16#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/clk_slow.v:3]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/display.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/display.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'display' (17#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/display.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:22]
+WARNING: [Synth 8-567] referenced signal 'AN' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'display_mode' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'nextPC' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'ADROut' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'BDROut' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'WriteData' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'state' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'curPC' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'IRInstruction' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+WARNING: [Synth 8-567] referenced signal 'ALUoutDROut' should be on the sensitivity list [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_CPU' (18#1) [C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.srcs/sources_1/new/TOP_CPU.v:3]

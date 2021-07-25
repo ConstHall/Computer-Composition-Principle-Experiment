@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Dec 26 17:13:56 2020
+# Process ID: 11744
+# Current directory: C:/Users/93508/Desktop/Multiple-Cycle-CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13080 C:\Users\93508\Desktop\Multiple-Cycle-CPU\Multiple-Cycle-CPU.xpr
+# Log file: C:/Users/93508/Desktop/Multiple-Cycle-CPU/vivado.log
+# Journal file: C:/Users/93508/Desktop/Multiple-Cycle-CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/93508/Desktop/Multiple-Cycle-CPU/Multiple-Cycle-CPU.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/93508/Desktop/Multiple Test/Multiple-Cycle-CPU' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/93508/Multi-Cycle-CPU-master/mCPU/mCPU.srcs/constrs_1/new/basy3Ports.xdc'; using path 'C:/Users/93508/Desktop/Multi-Cycle-CPU-master/mCPU/mCPU.srcs/constrs_1/new/basy3Ports.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/93508/Multi-Cycle-CPU-master/mCPU/mCPU.srcs/constrs_1/new/basy3Ports.xdc'; using path 'C:/Users/93508/Desktop/Multi-Cycle-CPU-master/mCPU/mCPU.srcs/constrs_1/new/basy3Ports.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/93508/Multi-Cycle-CPU-master/mCPU/mCPU.srcs/constrs_1/new/basy3Ports.xdc'; using path 'C:/Users/93508/Desktop/Multi-Cycle-CPU-master/mCPU/mCPU.srcs/constrs_1/new/basy3Ports.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 899.125 ; gain = 272.023
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 26 17:16:17 2020...

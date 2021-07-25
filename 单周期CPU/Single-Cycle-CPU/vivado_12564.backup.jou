@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Nov 30 09:27:50 2020
+# Process ID: 12564
+# Current directory: C:/Users/93508/Desktop/Project/SingleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent760 C:\Users\93508\Desktop\Project\SingleCPU\SingleCPU.xpr
+# Log file: C:/Users/93508/Desktop/Project/SingleCPU/vivado.log
+# Journal file: C:/Users/93508/Desktop/Project/SingleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/93508/Desktop/Project/SingleCPU/SingleCPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sim.tcl
+close_sim
+launch_simulation
+source sim.tcl
+close_sim

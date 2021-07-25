@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec 30 08:49:23 2020
+# Process ID: 11840
+# Current directory: C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.runs/synth_1
+# Command line: vivado.exe -log TOP_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_CPU.tcl
+# Log file: C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.runs/synth_1/TOP_CPU.vds
+# Journal file: C:/Users/93508/Desktop/大二资料/大二上/计算机组成原理/2020-计组实验/计组实验3_4（2020）/18329015 郝裕玮 03 多周期CPU/Multiple-Cycle-CPU/Multiple-Cycle-CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_CPU.tcl -notrace
